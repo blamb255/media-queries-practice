@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || GENERAL STYLES */
+body {
+  font: 1.5rem "Nunito", sans-serif;
+  min-height: 100vh;
+}
+body {
+    font: 1.5rem "Nunito", sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer,
+aside,
+article {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+header {
+    background: hotpink;
+}
+
+aside {
+    background: steelblue;
+}
+
+article {
+    background: mediumspringgreen;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background: orange;
+}
+
+/* MOBILE FIRST */
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 768px) {
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        gap: 1rem;
+    }
+
+    aside {
+        flex: 1;
+    }
+
+    .articles {
+        flex: 3;
+    }
+}
